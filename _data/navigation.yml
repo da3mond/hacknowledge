@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+    url: /about.md
   - title: "OSCP notes"
-    url: /OSCPnotes
+    url: /OSCPnotes.md
   - title: "Resume"
     url: /resume.md
   # - title: "About"
