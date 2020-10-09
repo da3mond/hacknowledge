@@ -110,11 +110,11 @@ author:
 
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-       # url: "https://twitter.com/Ronin0x00"
+        url: "https://www.twitter.com/Ronin0x00"
 
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin-square"
+       url: "https://www.linkedin.com/in/shubhamkhichi/"
 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
