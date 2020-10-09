@@ -101,7 +101,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "mailto:shubhamkhichi12@gmail.com"
+       # url: "mailto:shubhamkhichi12@gmail.com"
 
     - label: "Website"
       icon: "fas fa-fw fa-link"
