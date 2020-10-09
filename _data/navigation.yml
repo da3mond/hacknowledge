@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "About"
-    url: /about/
+    url: https://da3mond.github.io/hacknowledge/about/
   - title: "OSCP notes"
     url: /OSCPnotes/
   - title: "Resume"
