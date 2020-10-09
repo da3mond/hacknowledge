@@ -94,10 +94,11 @@ analytics:
 # Site Author
 author:
   name             : "Shubham Khichi"
-  avatar           : "/assets/images/personal_photo.jpg"
+  avatar           : #"/assets/images/personal_photo.jpg"
   bio              : "Penetration Tester"
   location         : "Dallas,TX"
-  email            : "Email me!"
+  email            : "shubhamkhichi12@gmail.com"
+  Twitter          : "https://twitter.com/Ronin0x00"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
