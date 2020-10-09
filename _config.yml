@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "Defaut" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Shubham Khichi"
+title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Shubham Khichi"
-description              : "Pen-Testing Platform!"
+name                     : "Your Name"
+description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -93,18 +93,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "Shubham Khichi"
-  avatar           : "/images/doggo.jpg"
-  bio              : "I like to hack things"
-  location         : "Dallas, Texas"
-  email            : "shubhamkhichi12@gmail.com"
+  name             : "Your Name"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am an **amazing** person."
+  location         : "Somewhere"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       # url: "mailto:shubhamkhichi12@gmail.com"
-    - label: "Linkedin"
-      icon: "fas fa-fw fa-linkedin"
-       # url: "https://www.linkedin.com/in/shubhamkhichi/"
+      # url: "mailto:your.name@email.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -113,7 +113,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "da3mond"
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -131,7 +131,7 @@ footer:
       icon: "fab fa-fw fa-github"
       # url:
     - label: "GitLab"
-      icon: "fab fa-fw fa-linkedin"
+      icon: "fab fa-fw fa-gitlab"
       # url:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
@@ -279,10 +279,3 @@ defaults:
       comments: # true
       share: true
       related: true
-# Walkthroughs
-- scope:
-    path: ""
-    type: pages
-    values:
-      layout: single
-      author_profile: true
