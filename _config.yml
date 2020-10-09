@@ -98,7 +98,7 @@ author:
   bio              : "Penetration Tester"
   location         : "Dallas,TX"
   email            : "shubhamkhichi12@gmail.com"
-  Twitter          : "https://www.twitter.com/Ronin0x00"
+  twitter          : "https://www.twitter.com/Ronin0x00"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
