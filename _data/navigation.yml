@@ -1,11 +1,11 @@
 # main links
 main:
   - title: "About"
-    url: https://da3mond.github.io/hacknowledge/about/
+    url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "OSCP notes"
-    url: /OSCPnotes/
+    url: /OSCPnotes
   - title: "Resume"
-    url: /resume.md/
+    url: /resume.md
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
