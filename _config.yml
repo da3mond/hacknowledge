@@ -114,8 +114,8 @@ author:
       #url: "https://www.twitter.com/Ronin0x00"
 
     - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin-square"
-      #url: "https://www.linkedin.com/in/shubhamkhichi/"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/shubhamkhichi/"
 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
