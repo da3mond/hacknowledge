@@ -110,7 +110,7 @@ author:
 
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-       # url: "https://www.twitter.com/Ronin0x00"
+      url: "https://www.twitter.com/Ronin0x00"
 
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin-square"
