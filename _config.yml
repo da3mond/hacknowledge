@@ -97,13 +97,13 @@ author:
   avatar           : #"/assets/images/personal_photo.jpg"
   bio              : "Penetration Tester"
   location         : "Dallas,TX"
-  email            : "shubhamkhichi12@gmail.com"
-  twitter          : "https://www.twitter.com/Ronin0x00"
+  #email            : "shubhamkhichi12@gmail.com"
+  #twitter          : "https://www.twitter.com/Ronin0x00"
   #linkedin         : "https://www.linkedin.com/in/shubhamkhichi/"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      #url: "mailto:shubhamkhichi12@gmail.com"
+      url: "mailto:shubhamkhichi12@gmail.com"
 
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -111,7 +111,7 @@ author:
 
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      #url: "https://www.twitter.com/Ronin0x00"
+      url: "https://www.twitter.com/Ronin0x00"
 
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
