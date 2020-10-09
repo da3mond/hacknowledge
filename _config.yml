@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "en-US"
 title                    : "Hacknowledge | Share & Learn"
 title_separator          : "-"
-subtitle                 : "Verson 1.0" # site tagline that appears below site title in masthead
+subtitle                 : "Hacknowledge | Share & Learn" # site tagline that appears below site title in masthead
 name                     : "Shubham Khichi"
 description              : "Place to learn share and grow in penetration testing"
 url                      : "https://da3mond.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
