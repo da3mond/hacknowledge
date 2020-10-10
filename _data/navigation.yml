@@ -2,8 +2,8 @@
 main:
   - title: "About"
     url: /about/
-  - title: "OSCP notes"
-    url: /OSCPnotes/
+  - title: "Notes"
+    url: /notes/
   - title: "Resume"
     url: /resume/
   - title: "Projects"
