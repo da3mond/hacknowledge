@@ -2,5 +2,5 @@
 title: "projects"
 permalink: "/projects/"
 ---
-Hi there
+Hi projects 
 this is the projects page

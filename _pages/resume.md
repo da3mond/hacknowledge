@@ -2,5 +2,5 @@
 title: "Resume"
 permalink: "/resume/"
 ---
-Hi there
+Hi Resume
 this is the resume page
