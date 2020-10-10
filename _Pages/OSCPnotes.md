@@ -1,5 +1,5 @@
 ---
 title: "OSCPnotes"
-permalink: /OSCPnotes/
+permalink: "/OSCPnotes/"
 ---
 Hi there
