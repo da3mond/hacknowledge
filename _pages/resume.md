@@ -1,7 +1,7 @@
 ---
-title: "resume"
+title: "Professional Resume"
 permalink: "/resume/"
-author_profile: true 
+author_profile: true
 ---
 
 
