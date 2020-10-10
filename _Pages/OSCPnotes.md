@@ -1,7 +1,5 @@
 ---
-title: "OSCP notes"
+title: "OSCPnotes"
 permalink: /OSCPnotes/
-header:
-  image: "/assets/oscp.jpg "
 ---
 Hi there

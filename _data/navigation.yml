@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "About"
-    url: /pages/about/
+    url: /about/
   - title: "OSCP notes"
-    url: hacknowledge/_pages/OSCPnotes/
+    url: /OSCPnotes/
   - title: "Resume"
     url: /resume/
   - title: "Projects"
