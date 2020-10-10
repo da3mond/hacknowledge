@@ -1,4 +1,5 @@
 ---
-title: "Machines Walkthrough"
-permalink: "/machineswalkthrough/"
+title: "projects"
+permalink: "/projects/"
 ---
+Hi there
