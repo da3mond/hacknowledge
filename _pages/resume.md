@@ -2,34 +2,30 @@
 title: "resume"
 permalink: "/resume/"
 ---
-**Shubham Khichi**
 
-Penetration Tester | OSCP | Security+
 
-Shubhamkhichi12@gmail.com | 682-407-5510 | linkedin.com/in/shubhamkhichi
-
-**SUMMARY**
+                                  **SUMMARY**
 
 Offensive Security practitioner pursuing new opportunities in penetration testing space. Experienced in web application testing, network analysis, finding, and mitigating vulnerabilities. Eager to apply my knowledge in the security industry and willing to go the extra mile to learn and refine my skills. I am detail-oriented and confident in my practice of pen testing and reporting. Also, possess excellent customer service skills to transfer technical knowledge to non-technical customers. Always have a learning approach toward my job and calm composure in the face of a difficult customer situation.
 
-**IMMIGRATION**
+                                **IMMIGRATION**
 
 - _ **Eligibility** __:_ Eligible to work in the U.S. with no restrictions, no H1B sponsorship is required.
 - _ **Immigration Status** __:_ Green Card EAD via i-485 Adjustment of Status.
 
-**EDUCATION**
+                                 **EDUCATION**
 
 - The University of Texas at Arlington December 2018
  B.S Information Systems &amp; Cybersecurity GPA 3.6/4.0
 
-**CERTIFICATION &amp; AWARDS**
+                        **CERTIFICATION &amp; AWARDS**
 
 - Offensive Security Certified Professional (OSCP), July 2020.
 - CompTIA Security+ Certified, March 2017.
 - Hacker rank on HackTheBox (Global Ranking 850)
 - Fidelity Investments – Award of excellence in Customer Support
 
-**CYBERSECURITY EXPERIENCE**
+                         **CYBERSECURITY EXPERIENCE**
 
 - Proficient in assessing client networks and applications for security vulnerabilities and how to mitigate them.
 - Used information gathering techniques to identify and enumerate targets running various OS and services.
@@ -38,7 +34,7 @@ Offensive Security practitioner pursuing new opportunities in penetration testin
 - Leveraged tunneling techniques to pivot between networks.
 - Analyzed, corrected, modified, and cross-compiled public exploit code.
 
-**INDUSTRY EXPERIENCE**
+                            **INDUSTRY EXPERIENCE**
 
 **Fidelity Investments, Westlake** Feb 2019 - present
 
@@ -49,7 +45,7 @@ _End User Support Specialist_
 - Consistently achieved top ranks in monthly metrics, call duration, number of calls per shift, and customer satisfaction ratings.
 - Proficient in detail-oriented ticket documentation using ServiceNow, while exhausting every avenue to resolve software bugs and maintaining quick service.
 
-**TECHNICAL SKILLS**
+                             **TECHNICAL SKILLS**
 
 - _ **Software** __:_ Python, PHP, JavaScript, Perl, Bash/Shell, PowerShell.
 - _ **Platform:** _ Docker, AWS, VMware Workstation/Fusion, Active Directory.
