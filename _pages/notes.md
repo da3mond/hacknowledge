@@ -1,5 +1,5 @@
 ---
-title: "notes"
-permalink: "/notes/"
+title: "pentestnotes"
+permalink: "/pentestnotes/"
 ---
 Hi there
