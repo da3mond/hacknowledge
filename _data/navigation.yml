@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "About"
-    url: /hacknowledge/pages/about.md/
+    url: /about/
   - title: "OSCP notes"
-    url: /OSCPnotes.md/
+    url: /OSCPnotes/
   - title: "Resume"
-    url: /resume.md/
+    url: /resume/
   - title: "Projects"
-    url: /projects.md/
+    url: /projects/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
