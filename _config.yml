@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Shubham Khichi"
-  avatar           : "/assets/images/bio_pic.jpg"
+  avatar           : "/images/bio_pic.jpg"
   bio              : "Penetration Tester"
   location         : "Dallas,TX"
   #email            : "shubhamkhichi12@gmail.com"
