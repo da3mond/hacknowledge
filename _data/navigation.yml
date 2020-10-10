@@ -1,11 +1,11 @@
 # main links
 main:
   - title: "About"
-    url: /about.md/
+    url: /pages/about/
   - title: "OSCP notes"
-    url: /OSCPnotes.md/
+    url: hacknowledge/_pages/OSCPnotes/
   - title: "Resume"
-    url: /resume.md/
+    url: /resume/
   - title: "Projects"
     url: /projects.md/
   # - title: "About"
