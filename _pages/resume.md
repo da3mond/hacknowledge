@@ -5,7 +5,7 @@ author_profile: true
 ---
 
 
-#                                         SUMMARY
+# SUMMARY
 
 Offensive Security practitioner pursuing new opportunities in penetration testing space. Experienced in web application testing, network analysis, finding, and mitigating vulnerabilities. Eager to apply my knowledge in the security industry and willing to go the extra mile to learn and refine my skills. I am detail-oriented and confident in my practice of pen testing and reporting. Also, possess excellent customer service skills to transfer technical knowledge to non-technical customers. Always have a learning approach toward my job and calm composure in the face of a difficult customer situation.
 
@@ -16,8 +16,9 @@ Offensive Security practitioner pursuing new opportunities in penetration testin
 
 # EDUCATION
 
-- The University of Texas at Arlington                                        December 2018
- B.S Information Systems &amp; Cybersecurity GPA 3.6/4.0
+- The University of Texas at Arlington                                        
+  December 2018
+- B.S Information Systems &amp; Cybersecurity GPA 3.6/4.0
 
 # CERTIFICATION &amp; AWARDS
 
