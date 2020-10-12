@@ -4,8 +4,7 @@ date: 2020-10-12
 tags: [Penetration Testing, TryHackMe, Skynet]
 ---
 
-Nmap Enumeration[](#nmap-enumeration)
-
+## Nmap Enumeration
 =========================================
 
 There are multiple ways to perform port scans through nmap.
@@ -16,29 +15,27 @@ There are multiple ways to perform port scans through nmap.
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MHmxyKNNtS8Klt7zSC7%2F-MHmy0JoNjLYx6TZw5lo%2F-MHnoIhNye7zvhaxJwyl%2FScreen%20Shot%202020-09-21%20at%2010.17.06%20PM.png?alt=media&token=70a17efc-46a4-4409-b3c9-131b66c753e5)
 
-Zenmap Scans
-
-To perform the scan from terminal follow along
-
-Write down all the ports in a format specificd below and save as target.txt
-
- 22/tcp open ssh
-
- 80/tcp open http
-
- 110/tcp open pop3
-
- 139/tcp open netbios-ssn
-
- 143/tcp open imap
-
- 445/tcp open microsoft-ds
+>**To perform the scan from terminal follow along**
+>
+>Write down all the ports in a format specified below and save as target.txt
+>
+> 22/tcp open ssh
+>
+>  80/tcp open http
+>
+>  110/tcp open pop3
+>
+>  139/tcp open netbios-ssn
+>
+>  143/tcp open imap
+>
+>  445/tcp open microsoft-ds
 
 Now run the following command, this will further enumerate the targets and find vulnerability
 
-nmap -iL targets.txt -A -O -sV --script=version,vuln -oA detailed_scan -T5
+>nmap -iL targets.txt -A -O -sV --script=version,vuln -oA detailed_scan -T5
 
-SMB Enumeration | Port 139/tcp[](#smb-enumeration-or-port-139-tcp)
+## SMB Enumeration | Port 139/tcp
 
 ======================================================================
 
@@ -50,15 +47,14 @@ SMB shares can be found using multiple methods as listed below
 
 3.  **SMBclient** - smbclient -L \\<IP>
 
-FYI: Any shares with $ after the name requires admin privilege to read FYI: If you dont have the password just press enter
+>FYI: Any shares with $ after the name requires admin privilege to read FYI: If you dont have the password just press enter
 
-We know that the user is [milesdyson]
+>We know that the user is [milesdyson]
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MHmxyKNNtS8Klt7zSC7%2F-MHmy0JoNjLYx6TZw5lo%2F-MHnq0fFEYCQojy4mc1j%2FScreen%20Shot%202020-09-21%20at%2010.24.47%20PM.png?alt=media&token=5811a3e4-1944-4b56-ad39-25eec26ed9f7)
 
-Above Enum4linux | Below SMBclient
 
-Mount an SMB drive[](#mount-an-smb-drive)
+## Mount an SMB drive[](#mount-an-smb-drive)
 
 ---------------------------------------------
 
@@ -72,93 +68,81 @@ There are 2 ways to mount an SMB drive
 
 2.  **CIFS method**
 
-**Mounting using SMBclient**[](#mounting-using-smbclient)
+**Mounting using SMBclient**
 
 -------------------------------------------------------------
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MHmxyKNNtS8Klt7zSC7%2F-MHmy0JoNjLYx6TZw5lo%2F-MHnu-YylW_4gyQh6v6Y%2FScreen%20Shot%202020-09-21%20at%2010.42.23%20PM.png?alt=media&token=ea554d3d-2eba-4875-aae4-1091876b6ec3)
 
-Using SMB client to mount shares
-
 Once we download the files we can see what the following says:
 
 -   Attention.txt
 
-A recent system malfunction has caused various passwords to be changed.
-
-All skynet employees are required to change their password after seeing this.
-
--Miles Dyson
+>A recent system malfunction has caused various passwords to be changed.
+>
+>All skynet employees are required to change their password after seeing this.
+>
+>-Miles Dyson
 
 -   log1.txt (log2 and log3 dont have anything)
 
-cyborg007haloterminator
-
-terminator22596
-
-terminator219
-
-terminator20
-
-terminator1989
-
-terminator1988
-
-terminator168
-
-terminator16
-
-terminator143
-
-terminator13
-
-terminator123!@#
-
-terminator1056
-
-terminator101
-
-terminator10
-
-terminator02
-
-terminator00
-
-roboterminator
-
-pongterminator
-
-manasturcaluterminator
-
-exterminator95
-
-exterminator200
-
-dterminator
-
-djxterminator
-
-dexterminator
-
-determinator
-
-cyborg007haloterminator
-
-avsterminator
-
-alonsoterminator
-
-Walterminator
-
-79terminator6
-
-1996terminator
-
-)s{A&2Z=F^n_E.B`
+>cyborg007haloterminator
+>
+>terminator22596
+>
+>terminator219
+>
+>terminator20
+>
+>terminator1989
+>
+>terminator1988
+>
+>terminator168
+>
+>terminator16
+>
+>terminator143
+>
+>terminator13
+>
+>terminator123!@#
+>
+>terminator1056
+>
+>terminator101
+>
+>terminator10
+>
+>terminator02
+>
+>terminator00
+>
+>roboterminator
+>
+>pongterminator
+>
+>manasturcaluterminator
+>
+>exterminator95
+>
+>exterminator200
+>
+>dterminator
+>
+>djxterminator
+>
+>dexterminator
+>
+>determinator
+>
+>cyborg007haloterminator
+>
+>)s{A&2Z=F^n_E.B`
 
 So looks like we have found a password list.
 
-Mounting using CIFS[](#mounting-using-cifs)
+## Mounting using CIFS
 
 -----------------------------------------------
 
@@ -166,13 +150,13 @@ Step 1: Navigate to mnt and create a folder called **share**
 
 Step 2: use the command to mount the shared drive
 
-mount -t cifs //<IP>/<sharename> /mnt/share
+>mount -t cifs //<IP>/<sharename> /mnt/share
+>
+>Then use the following command to navigate the share
+>
+>ls -alR /mnt/share/
 
-Then use the following command to navigate the share
-
-ls -alR /mnt/share/
-
-Directory Enumeration | Port 80/tcp[](#directory-enumeration-or-port-80-tcp)
+## Directory Enumeration | Port 80/tcp[](#directory-enumeration-or-port-80-tcp)
 
 ================================================================================
 
@@ -182,7 +166,7 @@ There are multiple ways to directory enumeration all do the same thing
 
 2.  **Gobuster** - Terminal based directory buster
 
-gobuster dir --url http://<IP> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --threads=15 -o gobuster.txt
+>gobuster dir --url http://<IP> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --threads=15 -o gobuster.txt
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MHmxyKNNtS8Klt7zSC7%2F-MHot3BsCzbXwUS4B2xr%2F-MHotIApuuEzmWtuzWsu%2FScreen%20Shot%202020-09-22%20at%203.18.45%20AM.png?alt=media&token=5f13b0bc-d486-42f6-b586-a101787511cd)
 
