@@ -2,6 +2,7 @@
 title: "Skynet TryHackMe"
 date: 2020-10-12
 tags: [Penetration Testing, TryHackMe, Skynet]
+excerpt: "Walkthrough"
 ---
 
 ## Nmap Enumeration
