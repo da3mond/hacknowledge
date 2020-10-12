@@ -277,7 +277,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "/_pages/projects"
       type: posts
     values:
       layout: single
@@ -297,4 +297,4 @@ defaults:
       author_profile: true
       read_time: true
       share: true
-      show_date: false 
+      show_date: false
