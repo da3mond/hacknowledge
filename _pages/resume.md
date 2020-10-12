@@ -5,26 +5,26 @@ author_profile: true
 ---
 
 
-# SUMMARY
+#                                         SUMMARY
 
 Offensive Security practitioner pursuing new opportunities in penetration testing space. Experienced in web application testing, network analysis, finding, and mitigating vulnerabilities. Eager to apply my knowledge in the security industry and willing to go the extra mile to learn and refine my skills. I am detail-oriented and confident in my practice of pen testing and reporting. Also, possess excellent customer service skills to transfer technical knowledge to non-technical customers. Always have a learning approach toward my job and calm composure in the face of a difficult customer situation.
 
 # IMMIGRATION
 
-- _ **Eligibility** __:_ Eligible to work in the U.S. with no restrictions, no H1B sponsorship is required.
-- _ **Immigration Status** __:_ Green Card EAD via i-485 Adjustment of Status.
+- **Eligibility**:_ Eligible to work in the U.S. with no restrictions, no H1B sponsorship is required.
+- **Immigration Status**:_ Green Card EAD via i-485 Adjustment of Status.
 
 # EDUCATION
 
-- The University of Texas at Arlington December 2018
+- The University of Texas at Arlington                                        December 2018
  B.S Information Systems &amp; Cybersecurity GPA 3.6/4.0
 
 # CERTIFICATION &amp; AWARDS
 
 - Offensive Security Certified Professional (OSCP), July 2020.
 - CompTIA Security+ Certified, March 2017.
-- Hacker rank on HackTheBox (Global Ranking 850)
-- Fidelity Investments – Award of excellence in Customer Support
+- Hacker rank on HackTheBox (Global Ranking 850).
+- Fidelity Investments – Award of excellence in Customer Support.
 
 # CYBERSECURITY EXPERIENCE
 
