@@ -1,8 +1,8 @@
 # main links
 main:
-  - title: "Pentest-Notes"
-    url: /pentestnotes/
+#  - title: "Pentest-Notes"
+#    url: /pentestnotes/
   - title: "Resume"
     url: /resume/
-  - title: "Projects"
-    url: /projects/
+#  - title: "Projects"
+#    url: /projects/
