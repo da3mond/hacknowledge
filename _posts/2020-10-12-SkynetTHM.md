@@ -274,15 +274,9 @@ Gobusting the URL we find a hidden admin page for cuppa CMS
 
 Using searchsploit we find that vulnerability of Local/Remote File Inclusion exists for Cuppa CMS.
 
-[
-
 Cuppa CMS - '/alertConfigField.php' Local/Remote File Inclusion
 
-Cuppa CMS - '/alertConfigField.php' Local/Remote File Inclusion. CVE-94101 . webapps exploit for PHP platform
-
-www.exploit-db.com
-
-](https://www.exploit-db.com/exploits/25971)
+[www.exploit-db.com](https://www.exploit-db.com/exploits/25971)
 
 The following are the LFI vulnerabilities
 
