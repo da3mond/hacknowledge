@@ -107,7 +107,7 @@ author:
 
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://www.hackthebox.eu/profile/148490"
 
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -124,6 +124,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+
+    - label: "HackTheBox"
+      icon:
 
 # Site Footer
 footer:
