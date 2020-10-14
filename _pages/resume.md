@@ -11,8 +11,8 @@ Offensive Security practitioner pursuing new opportunities in penetration testin
 
 # IMMIGRATION
 
-- **Eligibility**:_ Eligible to work in the U.S. with no restrictions, no H1B sponsorship is required.
-- **Immigration Status**:_ Green Card EAD via i-485 Adjustment of Status.
+- **Eligibility**: Eligible to work in the U.S. with no restrictions, no H1B sponsorship is required.
+- **Immigration Status**: Green Card EAD via i-485 Adjustment of Status.
 
 # EDUCATION
 
