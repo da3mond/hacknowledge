@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: archive-taxonomy
 permalink: /projects/
 title: "Machines Walkthroughs"
 author_profile: true

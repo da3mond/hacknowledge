@@ -106,7 +106,7 @@ author:
       url: "mailto:shubhamkhichi12@gmail.com"
 
     - label: "HackTheBox"
-      icon: "fas fa-fw fa-external-link-square-alt"
+      icon: "fas fa-fw fa-box"
       url: "https://www.hackthebox.eu/profile/148490"
 
     - label: "Twitter"
