@@ -1,7 +1,7 @@
 ---
 title: "Skynet TryHackMe"
 date: 2020-10-12
-#tags: [Skynet]
+tags: [Skynet]
 excerpt: "Walkthrough"
 ---
 
