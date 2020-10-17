@@ -3,6 +3,7 @@ layout: archive
 permalink: /projects/
 title: "Machines Walkthroughs"
 author_profile: true
+#field="tags"
 ---
 
 {% include group-by-array collection=site.posts %}
@@ -14,6 +15,3 @@ author_profile: true
     {% include archive-single.html %}
   {% endfor %}
 {% endfor %}
-
-
-#field="tags"
